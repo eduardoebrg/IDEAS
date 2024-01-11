@@ -1,0 +1,268 @@
+#main-content {
+  display: block; /* Ou o estilo de exibição desejado */
+}
+
+#instructions-content,
+#submit-demand-content,
+#terms-content,
+#about-content {
+  display: none;
+}
+
+
+/* Estilos Globais */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto; /* Garante a rolagem vertical se necessário */
+}
+a {
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Cabeçalho  -----------------------------------------*/
+header {
+  background-color: #003366;
+  padding: 2px;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  text-align: left;
+}
+
+.title-container {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.title-container h1,
+.title-container h2 {
+  color: #FFFFFF;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title-container h1 {
+  font-weight: 1200;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.title-container h2 {
+  font-weight: 400;
+  font-size: 1.5em; /* Ajuste o tamanho conforme necessário */
+  margin-top: 0.5em; /* Espaçamento entre o título e o subtítulo */
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+
+header img {
+  max-width: 160px;     /* Define uma largura máxima para o logo */
+  height: auto;
+  padding: 0px 20px;
+}
+
+.highlight {
+  background-color: white;
+  color: #003366; /* Azul marinho */
+  font-size: 0.5em; /* Tamanho menor; ajuste conforme necessário */
+  padding: 2px; /* Adicione padding se necessário para destacar */
+  display: inline-block; /* Torna o span um bloco inline para permitir a transformação */
+  transform: rotate(0deg); 
+  vertical-align: middle;
+  transform: translateY(-3px);
+}
+
+/* Final do Cabeçalho  -----------------------------------------*/
+
+/* Botões de Navegação */
+nav {
+  background-color: #003366;
+  display: flex;
+  justify-content: space-around;
+  padding:10px 0;
+}
+nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+nav a:hover {
+  background-color: #F38022;
+  color: #FFFFFF;
+}
+
+nav a:active {
+  background-color: #9a3e00; /* Exemplo de laranja mais escuro */
+  color: #FFFFFF; /* Cor do texto, ajuste se necessário */
+}
+
+
+/* Conteúdo da aba Home */
+main {
+  background-color: #FFFFFF;
+  padding: 20px 80px;
+  padding-bottom: 40px;
+  text-align: justify;
+  overflow-y: auto; /* Garante a rolagem vertical se necessário */
+  flex: 1; /* Isso faz com que o main ocupe o espaço disponível */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1; /* Ocupa metade do espaço disponível */
+  padding-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+
+/* Logo IDEAS HOME*/ 
+#main-logo {
+  display: block;       /* Torna o logo um bloco para aplicar margem automática */
+  margin: 0 auto;       /* Centraliza horizontalmente */
+  max-width: 400px;     /* Define uma largura máxima para o logo */
+  height: auto;         /* Mantém a proporção da altura em relação à largura */
+  padding: 30px 30px;
+}
+
+
+/*  Aba comece por aqui! */
+#instructions-content {
+  padding: 20px 80px;
+  padding-bottom: 40px;
+  text-align: justify;
+  overflow-y: auto; /* Garante a rolagem vertical se necessário */
+  flex: 1; 
+  /* Você pode ajustar os valores acima conforme necessário */
+}
+
+
+#instructions-image {
+  display: block;
+  margin: 20px auto;       /* Centraliza horizontalmente */
+  max-width: 100%;     /* Ajuste conforme necessário */
+  height: auto;    
+}
+
+/* Estilização do menu suspenso de demandas tecnológicas*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transform: translateY(5px);
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 5px; /* Espaço entre o texto e a seta */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #F38022;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Sobre o Projeto*/
+#submit-demand-content {
+  padding: 20px 80px;
+  padding-bottom: 40px;
+  text-align: justify;
+  overflow-y: auto; /* Garante a rolagem vertical se necessário */
+  flex: 1; 
+  /* Você pode ajustar os valores acima conforme necessário */
+}
+
+
+/* Sobre o Projeto*/
+#about-content {
+  padding: 20px 80px;
+  padding-bottom: 40px;
+  text-align: justify;
+  overflow-y: auto; /* Garante a rolagem vertical se necessário */
+  flex: 1; 
+  /* Você pode ajustar os valores acima conforme necessário */
+}
+
+
+
+/* Termos de uso */
+#terms-content {
+  background-color: #FFFFFF;
+  padding: 20px 80px;
+  text-align: justify;
+}
+#terms-content h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#terms-content p {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#terms-content li {
+  margin-bottom: 20px;
+}
+
+/* Rodapé  ---------------------*/
+footer {
+  flex:1;
+  display:flex;
+  justify-content:center;
+  background-color: #003366;
+  color: #FFFFFF;
+  padding-left: 190px;
+}
+
+.footer-container {
+  display: flex;
+  background-color: #003366; /* Cor de fundo do footer */
+  padding: 10px; /* Espaçamento */
+  align-items: end;
+
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center; /* Certifique-se de que as logos estejam alinhadas verticalmente */
+}
+
+
+.footer-logo-ct, .footer-logo-ufsm {
+  max-width: 100px; /* Limita a largura máxima das imagens */
+  height: auto; /* Mantém a proporção da altura */
+  margin-left: 10px; /* Espaçamento entre as logos, se necessário */
+}
